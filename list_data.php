@@ -24,7 +24,12 @@
       <td><?= $no++; ?></td>
       <td><?= $d['nama']; ?></td>
       <td><?= $d['email']; ?></td>
+      <td>
+         <a class="btn btn-secondary" href="edit_data.php?id=<?php echo $d['id']; ?>" >Delete </a>
+         <a class="btn btn-danger" href="delete.php?id=<?php echo $d['id']; ?>" >Delete </a>
+       </td>
      </tr>
+    
     <?php } ?>
    </table>
   </div>
